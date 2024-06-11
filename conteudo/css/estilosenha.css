@@ -1,0 +1,70 @@
+*{
+    margin: 0%;
+    padding: 0;
+    font-family: OCR A Std, monospace;
+    box-sizing: border-box;
+}
+
+main{
+    background-color: #2B2D42;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 1000px;
+    padding: 50px;
+}
+
+.centro {
+    background-color: #EDF2F4;
+    width: 510px; 
+    min-height: 500px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+    padding-inline: 30px;
+    border-radius: 12%;
+    box-shadow:10px 12px 7px rgba(0, 0, 0, 0.4);
+    position: relative;
+    z-index: 1;
+}
+
+.centro input{
+    border: none;
+    margin-top: 40px;
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.4);
+}
+
+.centro .a{
+    width: 450px;
+    height: 40px;
+}
+
+.centro .b{
+    cursor: pointer;
+    width: 150px;
+    height: 80px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 400; 
+    background-color: white;
+}
+
+.centro .c{
+    cursor: pointer;
+    width: 100px;
+    height: 80px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 400; 
+    background-color: white;
+}
+
+.centro .b:active{
+    background-color: rgb(223, 223, 223);
+}
+
+.centro .c:active{
+    background-color: rgb(223, 223, 223);
+}

@@ -1,0 +1,134 @@
+*{
+    margin: 0%;
+    padding: 0;
+    font-family: OCR A Std, monospace;
+    box-sizing: border-box;
+}
+
+header{
+    animation: gradient 40s infinite;
+    background: linear-gradient(270deg, #590D22, #800F2F, #A4133C, #C9184A, #FF4D6D, #FF758F, #FF8FA3, #FFB3C1, #FFCCD5,  #FFF0F3);
+    background-size: 800% 800%;
+    height: 180px;
+    font-weight: 900;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    box-shadow:0 12px 7px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.titulo {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+.titulo h1{
+    padding-top: 15px;
+    font-size: 40px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li{
+    padding: 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+}
+nav ul li a:hover{
+    color: #ffc5cc;
+    font-size: 43px;
+    cursor: pointer;
+}
+
+main{
+    background-color: #a53860;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 1000px;
+    padding: 50px;
+}
+
+.titulo2 span{
+    font-size: 50px;
+    color: black;
+    font-weight: 300;
+    position: relative;
+    display: inline-block;
+    animation: waviy 3s infinite;
+    animation-delay: calc(.6s * var(--i));
+}
+
+@keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }
+
+.titulo2{
+    position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  font-size: 60px;
+}
+
+.centro p{
+    font-size: 23px;
+    padding-top: 10px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.centro {
+    background-color: #EDF2F4;
+    width: 900px; 
+    min-height: 800px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    padding-inline: 30px;
+    border-radius: 12%;
+    box-shadow:10px 12px 7px rgba(0, 0, 0, 0.4);
+    position: relative;
+    z-index: 1;
+}
+
+footer{
+    background-color: #333;
+    color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
